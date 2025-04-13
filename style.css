@@ -11,7 +11,6 @@
     margin: auto;
     height: 100vh;
     opacity: 0.5;
-    padding: 20px 0;
 } 
  .greating-container {
     display: flex;
@@ -20,6 +19,7 @@
     border: 2px solid blue;
     align-items: center;
     padding: 10px ;
+    margin: auto;
     margin-top: 20px;
 } .game-area{
     display: grid;
@@ -28,7 +28,7 @@
     margin-top: 50px ;
     gap: 15px;
 }
- .game-area > .card {
+  .card {
     display: flex;
     position: relative;
     align-items: center;
@@ -42,7 +42,7 @@
     width: 150px;
     height: 150px;
     cursor: pointer;
-    
+  }
     i {
         font-size: 100px;
     } .back , .front {
@@ -61,18 +61,18 @@
         color: black;
       }
       
-      &.flipped .front {
+      .flipped .front {
         transform: rotateY(180deg);
       }
       
-      &.flipped .back {
+      .flipped .back {
         transform: rotateY(0deg);
       }
       
         .front {
         transform: rotateY(0deg);
       }
-} .start-game {
+ .start-game {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,7 +90,21 @@
 } .stop-clicking {
   pointer-events: none;
 } @media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
+  .game-area{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+    }
+} @media only screen and (max-width: 300px) {
+  .game-area{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,1fr);
+    } .card {
+      width: 100px;
+      height: 100px;
+      font-size: 80px;
+    } .start-game {
+      font-size: 20px;
+      width: 150px;
+      margin: 10px;
+    }
 }
