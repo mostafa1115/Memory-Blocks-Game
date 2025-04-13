@@ -55,7 +55,10 @@
         align-items: center;
         transition: transform 0.4s;
         
-    }  .back {
+    } .flipped {
+      pointer-events: none;
+    }
+      .back {
         transform: rotateY(180deg);
         background-color: #44dbd8;
         color: black;
@@ -67,6 +70,7 @@
       
       .flipped .back {
         transform: rotateY(0deg);
+        
       }
       
         .front {

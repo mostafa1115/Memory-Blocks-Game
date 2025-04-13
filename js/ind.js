@@ -57,6 +57,7 @@ for (let i = 0; i < numberOfCards; ++i) {
 const blocks = Array.from(GameArea.children);
 function flipCards(SelectedBlock) {
     SelectedBlock.classList.add("flipped");
+    
     // Get all the flipped cards
     allFlippedBlocks.push(SelectedBlock);
     if (allFlippedBlocks.length === 2) {
