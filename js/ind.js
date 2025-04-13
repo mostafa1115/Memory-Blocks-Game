@@ -97,7 +97,7 @@ function CheckCards() {
     console.log(allFlippedBlocks);
 } // Win Handling
 function handleWin() {
-    if (True === 1) {
+    if (True === 10) {
         startBtn.textContent = "You Win!!!!";
         startBtn.style.backgroundColor = "#cfcf00";
         startBtn.style.fontSize = "50px";
