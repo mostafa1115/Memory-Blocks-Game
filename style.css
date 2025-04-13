@@ -11,6 +11,7 @@
     margin: auto;
     height: 100vh;
     opacity: 0.5;
+    padding: 20px 0;
 } 
  .greating-container {
     display: flex;
@@ -88,4 +89,8 @@
     scale: 1.1;
 } .stop-clicking {
   pointer-events: none;
+} @media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
 }
