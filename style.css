@@ -89,7 +89,10 @@
     scale: 1.1;
 } .stop-clicking {
   pointer-events: none;
-} @media only screen and (max-width: 600px) {
+} .matched {
+  pointer-events: none;
+}
+ @media only screen and (max-width: 600px) {
   .game-area{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(7,1fr);
