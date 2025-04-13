@@ -94,7 +94,7 @@
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(7,1fr);
     }
-} @media only screen and (max-width: 300px) {
+} @media only screen and (max-width: 400px) {
   .game-area{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(10,1fr);
